@@ -1,0 +1,35 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 4%;
+  flex: 1 12%;
+}
+
+.product-info {
+  margin-top: auto;
+}
+
+.add-to-cart-btn {
+  background: #00ff14;
+  border: none;
+}
+
+.photo {
+  height: 20vh;
+  width: 20vh;
+}
+panel1 {
+  color: darkgreen;
+}
+panel2 {
+  color: green
+}
+h1{
+  color: darkgreen;
+}
+h2{
+  color: green;
+}
