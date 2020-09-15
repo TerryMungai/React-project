@@ -44,20 +44,45 @@ class App extends React.Component {
       avocadoImgPrice:100,
 
       fruit5: "Oranges",
-      orangesImgQuantity: 60,
-      orangesImgPrice: 120,      
+      orangesImgQuantity: 70,
+      orangesImgPrice: 140,      
       
-      fruit6: "carrots",
+      fruit6: "cherry",
       carrotsImgQuantity:50,
       carrotsImgPrice:200,
+
+      fruit7: "Apple",
+      peasImgQuantity:30,
+      peasImgPrice:90,
+
+      Veg8:"Capsicum",
+      capsicumImgQuantity: 50,
+      capsicumImgPrice: 100,
+
+      fruit6:"Watermellon",
+      watermellonImgQuantity: 40,
+      watermellonImgPrice:80,
+
+      fruit7: "Passion",
+      passionImgQuantity: 50,
+      passionImgPrice: 100,
+
+      fruit8: "Grape",
+      grapeImgQuantity:60,
+      grapeImgPrice:120,
+
+      fruit9: "Guava",
+      guavaImgQuantity: 40,
+      guavaImgPrice: 80,
+
     };
   }
 
   render() {
     return (
       <div style={{ textAlign: "center" }}>
-        <h1><span>WELCOME TO</span> <span1>GREEN</span1> <span2>KIOSK</span2></h1>
-        <h2> We sale Fruits and Vegetables </h2>
+        <h1><span>WELCOME TO OUR </span> <span1>GREEN</span1> <span2>KIOSK</span2></h1>
+        <h2> We sell fresh Fruits and Vegetables </h2>
 
         <section className="products">
           <div className="product-card">
@@ -115,21 +140,22 @@ class App extends React.Component {
               </button>
             </div>
           </div>
-
+          
           <div className="product-card">
             <div className="product-image">
-              <img className="photo" src={"Images/banana2.png"} alt="" />
+              <img className="photo" src={"Images/capsicum.jpg"} alt="" />
             </div>
             <div className="product-info">
-              <h5> Banana</h5>
-              <p> Kes {this.state.banana2ImgPrice}</p>
-              <p> Quantity {this.state.banana2ImgQuantity} </p>
+              <h5> Capsicum</h5>
+              <p> Kes {this.state.capsicumImgPrice}</p>
+              <p> Quantity {this.state.capsicumImgQuantity} </p>
               <button className="add-to-cart-btn" onClick="saveItem()">
                 Add To cart
               </button>
             </div>
-          </div>
-
+          </div>  
+          
+                
           <div className="product-card">
             <div className="product-image">
               <img className="photo" src={"Images/strawberry.jpg"} alt="" />
@@ -150,8 +176,8 @@ class App extends React.Component {
             </div>
             <div className="product-info">
               <h5> Mangoes</h5>
-              <p> Kes {this.state.mangoesImgPrice}</p>
-              <p> Quantity {this.state.mangoesImgQuantity} </p>
+              <p> Kes {this.state.MangoesImgPrice}</p>
+              <p> Quantity {this.state.MangoesImgQuantity} </p>
               <button className="add-to-cart-btn" onClick="saveItem()">
                 Add To cart
               </button>
@@ -188,10 +214,10 @@ class App extends React.Component {
 
           <div className="product-card">
             <div className="product-image">
-              <img className="photo" src={"Images/carrots.jpg"} alt="" />
+              <img className="photo" src={"Images/cherry.jpg"} alt="" />
             </div>
             <div className="product-info">
-              <h5> Carrots</h5>
+              <h5> Cherry</h5>
               <p> Kes {this.state.carrotsImgPrice}</p>
               <p> Quantity {this.state.carrotsImgQuantity} </p>
               <button className="add-to-cart-btn" onClick="saveItem()">
@@ -199,6 +225,77 @@ class App extends React.Component {
               </button>
             </div>
           </div>
+
+          <div className="product-card">
+            <div className="product-image">
+              <img className="photo" src={"Images/Apple.jpg"} alt="" />
+            </div>
+            <div className="product-info">
+              <h5> Apple</h5>
+              <p> Kes {this.state.AppleImgPrice}</p>
+              <p> Quantity {this.state.AppleImgQuantity} </p>
+              <button className="add-to-cart-btn" onClick="saveItem()">
+                Add To cart
+              </button>
+            </div>
+          </div>  
+        
+          <div className="product-card">
+            <div className="product-image">
+              <img className="photo" src={"Images/banana2.png"} alt="" />
+            </div>
+            <div className="product-info">
+              <h5> Banana</h5>
+              <p> Kes {this.state.banana2ImgPrice}</p>
+              <p> Quantity {this.state.banana2ImgQuantity} </p>
+              <button className="add-to-cart-btn" onClick="saveItem()">
+                Add To cart
+              </button>
+            </div>
+          </div>
+
+
+          <div className="product-card">
+            <div className="product-image">
+              <img className="photo" src={"Images/passion fruit.jpg"} alt="" />
+            </div>
+            <div className="product-info">
+              <h5> Passion</h5>
+              <p> Kes {this.state.passionImgPrice}</p>
+              <p> Quantity {this.state.passionImgQuantity} </p>
+              <button className="add-to-cart-btn" onClick="saveItem()">
+                Add To cart
+              </button>
+            </div>
+          </div> 
+
+           <div className="product-card">
+            <div className="product-image">
+              <img className="photo" src={"Images/Grape.jpg"} alt="" />
+            </div>
+            <div className="product-info">
+              <h5> Grape</h5>
+              <p> Kes {this.state.grapeImgPrice}</p>
+              <p> Quantity {this.state.grapeImgQuantity} </p>
+              <button className="add-to-cart-btn" onClick="saveItem()">
+                Add To cart
+              </button>
+            </div>
+          </div> 
+
+          <div className="product-card">
+            <div className="product-image">
+              <img className="photo" src={"Images/Guava.jpg"} alt="" />
+            </div>
+            <div className="product-info">
+              <h5> Guava</h5>
+              <p> Kes {this.state.guavaImgPrice}</p>
+              <p> Quantity {this.state.guavaImgQuantity} </p>
+              <button className="add-to-cart-btn" onClick="saveItem()">
+                Add To cart
+              </button>
+            </div>
+          </div>    
  </section>
       </div>
     );
