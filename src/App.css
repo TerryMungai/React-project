@@ -28,7 +28,11 @@ panel2 {
   color: green
 }
 h1{
-  color: darkgreen;
+  color: white;
+  background-color: rgb(8, 51, 22);
+  padding-bottom: 20px;
+  margin-top: 10px;
+  padding-top: 20px;
 }
 h2{
   color: green;

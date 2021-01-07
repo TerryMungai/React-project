@@ -7,6 +7,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       type1: "Vegetables",
+      
+      veg0:"header",
 
       veg1: "Spinach",
       spinachQuantity: 10,
@@ -36,8 +38,8 @@ class App extends React.Component {
       strawberryImgPrice:150,
 
       fruit3: "Mangoes",
-      mangoImgQuantity:60,
-      mangoImgPrice:120,
+      mangosImgQuantity:80,
+      mangosImgPrice:120,
 
       fruit4: "avocado",
       avocadoImgQuantity:50,
@@ -52,8 +54,8 @@ class App extends React.Component {
       carrotsImgPrice:200,
 
       fruit7: "Apple",
-      peasImgQuantity:30,
-      peasImgPrice:90,
+      appleImgQuantity:70,
+      appleImgPrice:90,
 
       Veg8:"Capsicum",
       capsicumImgQuantity: 50,
@@ -74,16 +76,18 @@ class App extends React.Component {
       fruit9: "Guava",
       guavaImgQuantity: 40,
       guavaImgPrice: 80,
+      
 
     };
   }
+  
 
   render() {
     return (
       <div style={{ textAlign: "center" }}>
-        <h1><span>WELCOME TO OUR </span> <span1>GREEN</span1> <span2>KIOSK</span2></h1>
-        <h2> We sell fresh Fruits and Vegetables </h2>
-
+        <h1><strong>GREENS KIOSK</strong></h1>
+        
+        <h2><img src="Images/header.JPG" height="590px;" width="100%"/></h2>
         <section className="products">
           <div className="product-card">
             <div className="product-image">
@@ -295,11 +299,15 @@ class App extends React.Component {
                 Add To cart
               </button>
             </div>
-          </div>    
+          </div> 
+             
  </section>
       </div>
+
     );
   }
 }
+
+
 
 export default App;
